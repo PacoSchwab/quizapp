@@ -8,26 +8,45 @@ body {
   margin: 0;
 }
 
+main {
+  background-color: lightsalmon;
+}
+
 .title {
   width: 100%;
   height: auto;
   padding-top: 10px;
   padding-bottom: 20px;
   margin-top: 0;
+  margin-bottom: 0;
   border-bottom: 3px solid gray;
   text-align: center;
   background-color: lightgoldenrodyellow;
 }
 
+.cardset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .card {
   position: relative;
-  margin: 20px 10%;
+  width: 80%;
+  margin: 20px;
   border: 3px dotted #252629;
   padding: 30px;
+  padding-bottom: 10px;
+  padding-left: 10px;
   border-radius: 5px;
   display: flex;
   flex-flow: column;
   align-items: center;
+  background-color: lightcyan;
+}
+
+.card:hover {
+  border-style: solid;
 }
 
 .card_heading {
@@ -35,23 +54,59 @@ body {
   text-align: center;
 }
 
-.card_bookmark {
+.bookmark_img {
+  width: 50px;
+  height: 50px;
   position: absolute;
-  top: -30px;
+  top: -20px;
   right: 10px;
-  border: 2px solid #ff4a11;
-  font-size: 2em;
-  padding: 6px 12px;
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 
 button.answer {
-  width: 100px;
+  width: 120px;
+  font-weight: bold;
   border: 1px solid darkred;
   background-color: lavenderblush;
-  box-shadow: 3px 3px 5px darkred;
+  box-shadow: 3px 3px 5px rgb(152, 14, 14);
 }
 
-button.answer: {
+button.answer:hover {
+  background-color: #ff4a11;
+  color: white;
+}
+
+.category_set {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+.category {
+  background-color: lightgrey;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px #558abb;
+  margin: 5px;
+}
+
+div a:link {
+  text-decoration: none;
+  color: black;
+}
+
+div a:visited {
+  text-decoration: none;
+  color: purple;
+}
+
+div a:hover {
+  background-color: black;
+  text-decoration: none;
+  color: white;
+}
+
+div a:active {
+  background-color: lightsalmon;
+  text-decoration: none;
+  color: white;
 }
