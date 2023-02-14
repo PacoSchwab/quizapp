@@ -78,6 +78,7 @@ button.answer:hover {
 .category_set {
   display: flex;
   align-self: flex-start;
+  flex-wrap: wrap;
   margin-top: 40px;
 }
 
@@ -109,4 +110,39 @@ div a:active {
   background-color: lightsalmon;
   text-decoration: none;
   color: white;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: 3px solid gray;
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+  position: fixed;
+  bottom: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar img {
+  width: 60px;
+  height: auto;
+  padding: 5px;
+}
+
+.navbar img:hover {
+  background-color: #ff4a11;
+  border-radius: 20px;
+}
+
+.navbar img:active {
+  background-color: #558abb;
 }
